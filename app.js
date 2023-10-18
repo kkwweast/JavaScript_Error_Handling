@@ -1,15 +1,27 @@
 // TODO: Enable strict mode
-
-// TODO: Fix the following parameter list
+'use strict';
+// 
+  // TODO: Add a try/catch block toTODO: Fix the following parameter list
 function parseToJSON(data, data) {
-  // TODO: Add a try/catch block to
   // attempt to convert 'data' to JSON
   return JSON.parse(data); 
   
   // TODO: if an exception is raised
   // print the error to the console
   // and return null
+}    
+
+function parseData(data) {
+  try {
+    return JSON.parse(data);
+  } catch (error) {
+    console.error(error);
+    return null;
+  }
 }
+console.log(parseData("invalidJson")); 
+console.log(parseData('{"success": true }')); 
+
 
 let failData = "<h1>Hello World!</h1>"
 

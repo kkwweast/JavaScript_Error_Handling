@@ -22,6 +22,7 @@ Exercise Repo: [JS Error Handling](https://github.com/Bryantellius/JavaScript_Er
 Complete the following in your `app.js` file
 
 1. Enable JavaScript's "Strict Mode" for the _file_
+'use strict';
 
 ### Exercise 2: Function Syntax Debugging
 
@@ -49,4 +50,9 @@ When you are finished, your console should resemble the following:
 ```txt
 null
 { success: true }
-```
+
+
+
+
+```console.log(parseData("invalidJson")); // Prints 'null'
+console.log(parseData('{"success": true }')); // Prints '
